@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    background: black;
+}
+#menu{
+    display: inline-flex;
+    color: white;
+    align-items: center;
+    text-align: center;
+   
+}
+#menu img{
+    max-width: 20%;
+    margin-left: 15px;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+#texto{
+    background-image: url(bd5bf7f4703370293102f9cf9d1f134f.jpg);
+    text-align: center;
+    color: white;
+    font-size: large;
+    background-size: cover;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 1000px;
+    
+}
+#texto p{
+    margin: 20px;
+    padding: 20px;
+
+}
+#navbar-example2{
+    text-align: center;
+    align-items: center;
+}
+

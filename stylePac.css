@@ -1,0 +1,28 @@
+#menu {
+    display: inline-flex;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+
+}
+#menu img {
+   max-width: 20%;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: white;
+    color: black;
+    text-align: center;
+}
+h1, h2 {
+    margin-left: 11em;
+    margin-right: 8.5em;
+}
+.container {
+    margin-top: 20px;
+}
+
