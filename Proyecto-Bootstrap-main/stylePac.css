@@ -1,0 +1,25 @@
+#menu {
+   color: white;
+    background-color: black;
+    font-size: x-large;
+
+}
+#menu img {
+   max-width: 15%;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+   
+    justify-items: space-between ;
+}
+

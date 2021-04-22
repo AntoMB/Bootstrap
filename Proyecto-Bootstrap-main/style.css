@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+
+
+#menu{
+    background-color: black;
+    color: white;
+    font-size: x-large;
+    
+}
+#menu img {
+    max-width: 15%;
+     margin-left: 15px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+#menu nav{
+    width: 100%;
+    margin-left: 21em;
+}
+#navbarNav{
+    font-size: 30px;
+    text-align: right;
+}
+iframe{
+   width: 700px;
+   height: 450px;
+   margin: 150px;
+  
+}
+#video{
+    background-image: url(imagenes/2pac-Chi-Modu-LYFSTYL.jpg);  
+    background-size: cover;
+    text-align: center;
+   width: 5%;
+    
+}
+
+#rappers{
+    text-align: center;
+    
+
+}
+footer{
+    text-align: center;
+}
+
+
