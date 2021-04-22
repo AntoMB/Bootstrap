@@ -12,19 +12,21 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous">
+        <script src="validator.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="jquery.validate.min.js"></script>
     </head>
-    <body style="background-color: black;">
+    <body>
 
         <!-- MENÚ -->
 
-        <div class="container" id="menu">
-            <div class="row">
+        <div class="container-fluid" id="menu">
+            <div class="row" style="align-items: baseline;">
                 <div class="col-sm">
-                    <img src="428-4283134_who-you-got-death-row-records-logo-clipart.png">
+                    <img src="imagenes/428-4283134_who-you-got-death-row-records-logo-clipart.png">
                 </div>
                 <div class="col-sm">
-
-                    <h1>Historia</h1>
+                    <h1>Contacto</h1>
                 </div>
                 <div class="col-sm">
                     <nav
@@ -34,7 +36,7 @@
                             <li class="breadcrumb-item">
                                 <a href="index.html">Inicio</a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">Historia</li>
+                            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
                         </ol>
                     </nav>
                 </div>
@@ -42,64 +44,87 @@
         </div>
 
         <!-- FORMULARIO -->
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+        <div class="container">
+            <form id="formulario-contacto">
+            <div class="row" style="align-items: baseline;">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="input" name="nombre">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="input" name="nombre">
+                    </div>
             </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="inputPassword4">
+            <div class="row" style="align-items: baseline;">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" name="email">
+                    </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4" name="contraseña">
+                    </div>
             </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Dirección</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress"
-                    placeholder="Calle Falsa 123">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Edificio</label>
-                <input
-                    type="text"
-                    class="form-control"
-                    id="inputAddress2"
-                    placeholder="Apartmento, estudio o casa">
-            </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">Continente</label>
-                <select id="inputState" class="form-select">
-                    <option>América</option>
-                    <option>Europa</option>
-                    <option>África</option>
-                    <option>Asia</option>
-                    <option>Oceanía</option>
-                </select>
-            </div>
-            <div class="col-md-2">
-                <label for="inputZip" class="form-label">Código Postal</label>
-                <input type="text" class="form-control" id="inputZip">
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Recibir la última información
-                    </label>
+           
+            <div class="row" style="align-items: baseline;">
+                <div class="col">
+                    <label for="inputAddress" class="form-label">Dirección</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="Calle Falsa 123">
+                </div>
+                <div class="col">
+                    <label for="inputAddress2" class="form-label">Edificio</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress2"
+                        placeholder="Apartmento, estudio o casa">
                 </div>
             </div>
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Inciar sesión</button>
+            <div class="row" style="align-items: baseline;">
+                <div class="col">
+                    <label for="inputCity" class="form-label">ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                
+                <div class="col">
+                    <label for="inputZip" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col" style="align-items: flex-end;">
+                    <label for="inputState" class="form-label">Continente</label>
+                    <select id="inputState" class="form-select">
+                        <option>América</option>
+                        <option>Europa</option>
+                        <option>África</option>
+                        <option>Asia</option>
+                        <option>Oceanía</option>
+                    </select>
+                </div>
+            </div>
+                <div class="col"></div>
+            <div class="row" style="align-items: baseline;">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Inciar sesión</button>
+                </div>
+                    
+          </div>
+          <div class="col">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Recibir la última información
+                </label>
             </div>
         </form>
+        </div>
         <!-- FOOTER -->
         <footer>
-            <img src="images.png">
+            <img src="imagenes/images.png">
         </footer>
 
         <script
