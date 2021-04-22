@@ -1,38 +1,27 @@
 
 #menu{
-    display: inline-flex;
-    color: white;
-    align-items: center;
-    text-align: center;
     background-color: black;
+    color: white;
+    font-size: x-large;
    
 }
 #menu img{
-    max-width: 20%;
+    max-width: 15%;
     margin-left: 15px;  
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#menu h1{
-   
-    margin-right: 50px;
+.col{
+    margin-top: 7px;
 }
 div{
     text-align: center;
 }
 footer{
     background: white;
-    color: black;
     text-align: center;
 }
 
-form{
-    padding: 100px;
-    background-color: white;
-}
-form div{
-    margin: 1px;
-}
 #ropa{
     background-color: white;
 

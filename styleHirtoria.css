@@ -3,14 +3,13 @@ body{
     background: black;
 }
 #menu{
-    display: inline-flex;
+    background-color: black;
     color: white;
-    align-items: center;
-    text-align: center;
+    font-size: x-large;
    
 }
 #menu img{
-    max-width: 20%;
+    max-width: 15%;
     margin-left: 15px;  
     margin-top: 10px;
     margin-bottom: 10px;
@@ -23,7 +22,7 @@ footer{
 }
 
 #texto{
-    background-image: url(bd5bf7f4703370293102f9cf9d1f134f.jpg);
+    background-image: url(imagenes/bd5bf7f4703370293102f9cf9d1f134f.jpg);
     text-align: center;
     color: white;
     font-size: large;
